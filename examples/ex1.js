@@ -9,9 +9,9 @@ var Timeout = structr({
 		}, time);
 	},
 	"step timeout2": function(time, index, next) {
-		this.timeout(time, index, function(){});
-		this.timeout(time, index, function(){});
-		this.timeout3(time, index, function(){});
+		this.timeout(time, index);
+		this.timeout(time, index);
+		this.timeout3(time, index);
 		this.timeout(time, index, next);
 	},
 	"step timeout3": function(time, index, next) {
