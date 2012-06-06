@@ -13,12 +13,16 @@ var Timeout = structr({
 		timeout(time, index).
 		timeout(time, index).
 		timeout3(time, index).
+		timeout(time, index).
+		step(function(next) {
+			console.log("STEP 1");
+			next("hello");
+		},
+		function(message, next) {
+			console.log("STEP 2 %s", message)
+			setTimeout(next, 100);
+		}).
 		timeout(time, index, next);
-
-		this.step(function(next) {
-			console.log("STEP");
-			next();
-		})
 	},
 	"step timeout3": function(time, index, next) {
 		this.timeout(time, index, next);
