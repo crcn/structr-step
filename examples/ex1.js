@@ -14,6 +14,11 @@ var Timeout = structr({
 		timeout(time, index).
 		timeout3(time, index).
 		timeout(time, index, next);
+
+		this.step(function(next) {
+			console.log("STEP");
+			next();
+		})
 	},
 	"step timeout3": function(time, index, next) {
 		this.timeout(time, index, next);
