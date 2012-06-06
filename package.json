@@ -1,0 +1,12 @@
+{
+  "author": "Craig Condon",
+  "name": "structr-step",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crcn/structr-step.git"
+  },
+  "main": "./lib/index.js",
+  "dependencies": {},
+  "devDependencies": {}
+}
