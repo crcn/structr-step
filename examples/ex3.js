@@ -11,9 +11,12 @@ var Test = structr({
 			// this.timeout(500, next);
 			setTimeout(next, 500)
 		}).step(next);*/
-		console.log("lv1")
-		this.timeout(500, function(){});
-		next();
+		console.log("lv1");
+		var self = this;
+		this.timeout(500, function() {
+			
+		}).
+		step(next);
 	},
 	"step lv2": function(next) {
 
@@ -51,9 +54,4 @@ var t = new Test();
 
 t.lv1(function() {
 	console.log("DONE")
-}).
-lv1(function() {
-	console.log("DONE")
-})
-
-
+});
