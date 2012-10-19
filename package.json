@@ -7,6 +7,8 @@
     "url": "git://github.com/crcn/structr-step.git"
   },
   "main": "./lib/index.js",
-  "dependencies": {},
+  "dependencies": {
+    "tq": "0.0.x"
+  },
   "devDependencies": {}
 }
